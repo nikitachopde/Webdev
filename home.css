@@ -1,0 +1,392 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+ul{
+  list-style-type: none;
+}
+.section{
+  position: relative;
+  height: 100vh;
+ background-color: whitesmoke
+}
+.imag{
+  position: fixed;
+  left: 3%;
+  width: 36%;
+  top: 3%;
+}
+.text-container{
+  position: fixed;
+  left: 35%;
+  width: 77%;
+  top: 5%;
+  color: orange; 
+}
+.text-container h1{
+  font-size: 2.5em;
+  font-family: 'Lilita One', cursive;
+}
+.text-container h3{
+  font-size: 1.5em;
+  font-family: 'Lilita One', cursive;
+  font-family: 'Montez', cursive;
+  text-align: justify;
+}
+.image{
+  position: absolute;
+  top: 30%;
+  left: 8%;
+  width: 100%;
+  font-size: 0%;
+}
+
+/*BOX*/
+* {
+  box-sizing: border-box;
+}
+.list{
+  width: 75%;
+  top: 38%;
+  left: 12.5%;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 15px 15px 15px 15px;
+  background: rgb(141, 197, 228);
+  font-size: 1em;
+  color: rgb(253, 253, 251);
+  transition: 0.2s;
+  border-radius: 25px;
+  font-family: 'Montserrat', sans-serif;
+
+/* make the list items unselectable */
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+}
+.list .checked {
+  background: rgb(194, 147, 147);
+  color: rgb(19, 18, 18);
+  text-decoration: line-through;
+  border-radius: 10px;
+}
+/*HEADER*/
+.header {
+  position: relative;
+  background-color: rgb(52, 52, 153);
+  border-radius: 25px;
+  top: 38%;
+  width: 75%;
+  left: 12.5%;
+  padding: 6px 6px;
+  color: white;
+  text-align:justify;
+  font-family: 'Montserrat', sans-serif;
+}
+.header h2{
+  font-size: 1.5em;
+  text-align: center;
+}
+.header:after {
+content: "";
+display: table;
+clear: both;
+}
+/* Style the input */
+input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 2px;
+  float: left;
+  font-size: 16px;
+}
+/* Style the "Add" button */
+.addBtn {
+  padding: 2px;
+  width: 24%;
+  height: 2.75%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+/*BOTTOM*/
+.bottom-nav{
+  position: fixed;
+  overflow: hidden;
+  width: 100%;
+  font-size: 1.2em;
+  background-color: rgb(150, 148, 148);
+  bottom: 0%;
+  left: 0%;
+  text-align: center;
+}
+.bottom-nav a{
+  color: rgb(209, 208, 208);
+}
+/*TOP*/
+.top-nav{
+  position: fixed;
+  overflow: hidden;
+  background-color: rgb(175, 201, 175);
+  top: 0%;
+  /*font-size: 0.5em;*/
+  text-align: initial;
+  width: 100%;
+  
+}
+.top-nav a {
+  float: right;
+  color: rgb(24, 53, 24);
+  padding: 3px 20px;
+  text-decoration: none;
+  font-size: .8em;
+}
+/* Change the color of links on hover */
+.top-nav a:hover {
+  background-color: rgb(17, 73, 41);
+  color: rgb(252, 248, 248);
+}
+/* Add a color to the active/current link */
+.top-nav a.active {
+ 
+  color: whitesmoke;
+}
+
+/*MEDIA QUERIES*/
+@media only screen and (min-width: 480px){
+  .text-container{
+    left: 36%;
+  }
+  .text-container h1{
+    font-size: 3.1em;
+  }
+  .text-container h3{
+    font-size: 2em;
+  }
+  .image{
+    left: 13%;
+    margin-right: 10px;
+    height: 20px;
+    width: 100%;
+  }
+  .header{
+    top: 42%;
+  }
+  .list{
+    top: 42%;
+    font-size: 1.2em;
+  }
+  .top-nav{
+    font-size: 1.2em;
+  }
+}
+@media only screen and (min-width: 590px){
+  .imag{
+    width: 34%;
+    top: 4.5%;
+  }
+  .text-container{
+    top: 6%;
+  }
+  .top-nav{
+    font-size: 1.3em;
+  }
+  .text-container h1{
+    font-size: 3.7em;
+  }
+  .text-container h3{
+    font-size: 2.5em;
+  }
+  .image{
+    top: 35%;
+    left: 15%;
+  }
+  .bottom-nav{
+    font-size: 1.22em;
+  }
+}
+@media only screen and (min-width: 750px){
+  .imag{
+    width: 28%;
+  }
+  .top-nav{
+    font-size: 1.5em;
+  }
+  .text-container{
+    left: 33%;
+  }
+  .text-container h1{
+    font-size: 4.2em;
+  }
+  .text-container h3{
+    font-size: 2.8em;
+  }
+  .header{
+    top: 43%;
+  }
+  .list{
+    top: 43%;
+  }
+  .image{
+    left: 22%;
+  }
+}
+@media only screen and (min-width: 900px){
+  .header{
+    width: 65%;
+    left: 30%;
+    top: 28%;
+  }
+  .list{
+    width: 65%;
+    left: 30%;
+    top: 28%;
+    font-size: 1.7em;
+  }
+  .image{
+    left: 7%;
+    top: 37%;
+    width: 20%;
+  }
+  .bottom-nav{
+    font-size: 1.5em;
+  }
+  .text-container h1{
+    font-size: 5.2em;
+  }
+  .text-container h3{
+    font-size: 3.2em;
+  }
+  .top-nav{
+    font-size: 1.7em;
+  }
+  .header h2{
+    font-size: 2.5em;
+  }
+}
+@media only screen and (min-width: 1054px){
+  .header{
+    width: 50%;
+    left: 47%;
+  }
+  .list{
+    width: 50%;
+    left: 47%;
+  }
+  .image{
+    width: 100%;
+    top: 54%;
+    left: 5%;
+  }
+  .bottom-nav{
+    font-size: 1.7em;
+  }
+  .text-container h1{
+    font-size: 6em;
+  }
+  .text-container h3{
+    font-size: 3.5em;
+  }
+}
+@media only screen and (min-width: 1450px){
+  .imag{
+    width: 22%;
+    left: 3%;
+    top: 5%;
+  }
+  .text-container h1{
+    font-size: 6.7em;
+  }
+  .text-container{
+    left: 26%;
+  }
+  .text-container h3{
+    font-size: 4.2em;
+  }
+  .top-nav{
+    font-size: 1.8em;
+  }
+  .bottom-nav{
+    font-size: 1.5em;
+  }
+  .header{
+    width: 45%;
+    left: 50%;
+    padding: 9px 9px 9px 9px;
+    top: 25%;
+  }
+  .list{
+    width: 45%;
+    left: 50%;
+    padding: 22px 22px 22px 22px;
+    top: 25%;
+  }
+  .image{
+    left: 3%;
+  }
+  .image img{
+    margin-right: 30px;
+    display: block;
+    float: left;
+    height: 1090%;
+    width: 13%;
+  }
+  
+}
+@media only screen and (min-width: 1220px){
+  .image img{
+    height: 1400%;
+  }
+  .image{
+    top: 49%;
+  }
+  .imag{
+    width: 18%;
+  }
+  .top-nav{
+    font-size: 2.2em;
+  }
+  .text-container{
+    left: 23%;
+  }
+  .text-container h1{
+    font-size: 7.5em;
+  }
+  .text-container h3{
+    font-size: 4.8em;
+  }
+  .header{
+    width: 40%;
+    left: 54%;
+    top: 26%;
+    font-size: 1em;
+  }
+  .list{
+    width: 40%;
+    left: 54%;
+    top: 26%;
+    line-height: 1.6;
+  }
+  .addBtn{
+    padding: 2.9px;
+  }
+  input{
+    padding: 3.2px;
+  }
+  .bottom-nav{
+    font-size: 1.2em;
+  }
+}
